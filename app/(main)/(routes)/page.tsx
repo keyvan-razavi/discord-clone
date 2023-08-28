@@ -1,6 +1,9 @@
-import { Button } from "@/components/ui/button";
-import { DESTRUCTION } from "dns";
+import { UserButton } from "@clerk/nextjs/app-beta";
 
 export default function Home() {
-  return <div>this is protected</div>;
+  return (
+    <div>
+      <UserButton afterSignOutUrl="/" />
+    </div>
+  );
 }
