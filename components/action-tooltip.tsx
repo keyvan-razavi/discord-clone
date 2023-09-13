@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Tooltip,
   TooltipTrigger,
@@ -15,8 +17,8 @@ interface ActionTooltipProps {
 export const ActionTooltip = ({
   label,
   children,
-  align,
   side,
+  align,
 }: ActionTooltipProps) => {
   return (
     <TooltipProvider>
