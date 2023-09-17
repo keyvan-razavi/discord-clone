@@ -15,9 +15,10 @@ export const ModalProvider = () => {
   if (!isMounted) {
     return null;
   }
-
-  <>
-    <CreateServerModal />
-    <InviteModal />
-  </>;
+  return (
+    <>
+      <CreateServerModal />
+      <InviteModal />
+    </>
+  );
 };
