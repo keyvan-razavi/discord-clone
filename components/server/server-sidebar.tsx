@@ -95,6 +95,33 @@ export const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
                   icon: iconMap[channel.type],
                 })),
               },
+              {
+                label: "Voice Channels",
+                type: "channel",
+                data: audioChannels?.map((channel) => ({
+                  id: channel.id,
+                  name: channel.name,
+                  icon: iconMap[channel.type],
+                })),
+              },
+              {
+                label: "Video Channels",
+                type: "channel",
+                data: audioChannels?.map((channel) => ({
+                  id: channel.id,
+                  name: channel.name,
+                  icon: iconMap[channel.type],
+                })),
+              },
+              {
+                label: "Member",
+                type: "member",
+                data: members?.map((member) => ({
+                  id: member.id,
+                  name: member.profile.name,
+                  icon: roleIconMap[member.role],
+                })),
+              },
             ]}
           />
         </div>
